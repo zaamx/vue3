@@ -38,6 +38,9 @@ export default {
     },
     close(ref) {
       console.log('Closed: ' + ref);
+    },
+    closeSidenav() {
+      this.$refs.leftSidenav.close();
     }
   }
   , components: {
@@ -46,6 +49,8 @@ export default {
   }
 
 };
+
+
 </script>
 
 <style>

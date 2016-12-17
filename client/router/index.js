@@ -5,6 +5,8 @@ import Category from '../views/Category'
 
 Vue.use(Router)
 
+
+
 export default new Router({
   mode: 'hash',
   routes: [
@@ -18,3 +20,4 @@ export default new Router({
     }
   ]
 })
+
