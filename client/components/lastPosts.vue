@@ -19,9 +19,12 @@
     },
 
     created: function(){
-      this.$http.get("https://www.reddit.com/r/"+ this.name +"/top.json?limit=5")
+      // this.$http.get("https://www.reddit.com/r/"+ this.name +"/top.json?limit=5")
+      this.$http.get("http://hispanoclub.com/wp-json/wp/v2/posts")
       .then(function(resp){
-        this.posts=resp.data.data.children;
+        console.log(resp.data)
+        this.posts=resp.data;
+        // this.posts=resp.data.data.children;
       });
     }
     ,components: {

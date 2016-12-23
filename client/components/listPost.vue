@@ -1,13 +1,13 @@
 <template>
     <md-list-item>
       <md-avatar>
-        <img :src="item.data.thumbnail" alt="People">
+        <img :src="item.data" alt="People">
       </md-avatar>
 
       <div class="md-list-text-container">
-        <span>Ali Connors</span>
+        <span>{{ item.title.rendered }}</span>
         <span>Brunch this weekend?</span>
-        <p>I'll be in your neighborhood doing errands...</p>
+        <p>{{ item.excerpt.rendered }}</p>
       </div>
 
       <md-button class="md-icon-button md-list-action">
